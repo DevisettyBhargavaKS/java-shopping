@@ -1,0 +1,4 @@
+Your Order are:
+"shirt" x 1 = Rs. 1500.0
+"Poco" x 1 = Rs. 60000.0
+Total - Rs. 61500.0

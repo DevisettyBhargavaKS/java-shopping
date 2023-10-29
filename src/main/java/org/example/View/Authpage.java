@@ -1,4 +1,9 @@
-package org.example.View;
+package org.example.view;
 
-public class Authpage {
+import org.example.util.StringUtils;
+
+public class AuthPage {
+    public void printAuthMenu() {
+        System.out.println(StringUtils.AUTH_MENU);
+    }
 }

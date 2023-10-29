@@ -1,13 +1,25 @@
-package org.example.model;
+package org.example.models;
 
 import java.sql.Timestamp;
 
 public class User {
     private int id;
     private String email;
-    private  String password;
+    private String password;
     private String name;
+    private Cart userCart;
+
+    public Cart getUserCart() {
+        return userCart;
+    }
+
+    public void setUserCart(Cart userCart) {
+        this.userCart = userCart;
+    }
+
     private Role role;
+
+
 
     public int getId() {
         return id;

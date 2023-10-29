@@ -1,23 +1,15 @@
-package org.example.View;
+package org.example.view;
 
-import org.example.utils.StringUtils;
+import org.example.util.StringUtils;
 
-import static org.example.utils.utils.println;
+public class WelcomePage {
 
-
-public class Welcomepage {
     public void welcome() {
-        try {
-            println(StringUtils.WELCOME_MESSAGE);
-            Thread.sleep(1000);
+        System.out.println(StringUtils.WELCOME_MESSAGE);
 
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-
-        }
     }
 
     public void printAuthMenu() {
-        println(StringUtils.AUTH_MENU);
+
     }
-}
+    }

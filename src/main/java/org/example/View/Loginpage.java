@@ -1,18 +1,15 @@
-package org.example.View;
+package org.example.view;
 
-import org.example.utils.StringUtils;
+import org.example.util.StringUtils;
 
-import static org.example.utils.utils.println;
-
-public class Loginpage {
-    public void printinvalidcredentials() {
+public class LoginPage {
+    public void printInvalidCredentials(){
         try {
-            println("#--------#");
-            println(StringUtils.INVALID_CREDENTIALS);
-            println("#---------#");
+            System.out.println("#---------------------#");
+            System.out.println(StringUtils.INVALID_CREDENTIALS);
+            System.out.println("#---------------------#");
             Thread.sleep(1000);
-
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }

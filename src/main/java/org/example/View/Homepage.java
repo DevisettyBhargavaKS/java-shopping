@@ -1,4 +1,10 @@
-package org.example.View;
+package org.example.view;
 
-public class Homepage {
+import org.example.util.StringUtils;
+
+public class HomePage {
+    public void printMenu() {
+        System.out.println(StringUtils.WELCOME_MESSAGE);
+        System.out.println(StringUtils.HOME_MENU);
+    }
 }
