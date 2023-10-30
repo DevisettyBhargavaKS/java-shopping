@@ -26,7 +26,7 @@ included 3 sub-files
       --In Auth controller Contain login and register and validatedUser
       --In register i faced the challenge by reading the file from csv file i have to create filewrite for entering the deatlis like id,name,password,conform password.
       HomeController
-      -->In homeController it can  be contain the home welcome 
+      -->In homeController it can  be contain the home welcome
        -->It can contain 5 types
       1.Categories
               CategortyController
