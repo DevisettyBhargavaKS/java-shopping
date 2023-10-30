@@ -9,7 +9,7 @@ This Application allows you to order a product in which having 2 categories
         Displayes all the products regarding to this category.
 2)Mobile Category
          Displayes all the products regarding to this category.
-*******Flow--->login/register--->select category--->products--->cart--->orders--->logout********
+*******Flow--->login/register--->select category--->products--->cart--->orders--->logout*******
 Application Files
 *Assets
 included 3 sub-files
