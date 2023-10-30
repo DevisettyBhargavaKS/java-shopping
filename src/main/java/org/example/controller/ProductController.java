@@ -22,7 +22,7 @@ public class ProductController implements IProductController {
     public ProductController(HomeController homeController) {
         this.homeController = homeController;
         this.productsPage = new ProductsPage();
-        this.cartController =new CartController(homeController);
+        this.cartController = new CartController(homeController);
     }
 
     @Override
@@ -46,11 +46,13 @@ public class ProductController implements IProductController {
 
         try {
             int choice = enterInt(StringUtils.ENTER_CHOICE);
-            int validProductId = 0;
+            int validProductId =0;
+
 
             if (choice == 99) {
                 homeController.printMenu();
             } else {
+
                 for (Product product : products) {
                     if (product.getId() == choice) {
                         validProductId = product.getId();

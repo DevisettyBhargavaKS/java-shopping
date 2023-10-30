@@ -1,12 +1,14 @@
 package org.example.controller;
 
 import org.example.models.CartProduct;
+import org.example.models.Product;
 import org.example.models.User;
 import org.example.util.AppException;
 import org.example.util.StringUtils;
 import org.example.view.OrdersPage;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
@@ -19,6 +21,7 @@ import java.util.Objects;
 
 import static org.example.util.AppInput.enterInt;
 import static org.example.util.FileUtil.getFilePath;
+import static org.example.util.FileUtil.getProductFile;
 import static org.example.util.UserUtil.getLoggedUser;
 import static org.example.util.Utils.println;
 
@@ -69,6 +72,7 @@ public class OrderController {
                 int orderId = enterInt(StringUtils.ENTER_CHOICE);
                 if (orderId == 99) {
                     homeController.printMenu();
+                    System.out.println(StringUtils.DELIVERY);
                 } else {
                     if (orderId > files.size()) {
                         println(StringUtils.INVALID_CHOICE);
@@ -88,6 +92,8 @@ public class OrderController {
                             println(line);
                         }
                         printOrders();
+
+
                     }
                 }
 
@@ -111,9 +117,10 @@ public class OrderController {
                 SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy - ");
 
                 Date d = sdf.parse(file_att.creationTime().toString());
+                if (fileEntry.getName().startsWith(String.valueOf(getLoggedUser().getId()))){
+                    files.put(dateFormat.format(d),fileEntry.getName());
 
-                if (fileEntry.getName().startsWith(String.valueOf(getLoggedUser().getId())))
-                    files.put(dateFormat.format(d), fileEntry.getName());
+                }
             } catch (IOException | ParseException e) {
                 throw new RuntimeException(e);
             }

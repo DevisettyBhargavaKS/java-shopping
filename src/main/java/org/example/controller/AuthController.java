@@ -58,6 +58,7 @@ public class AuthController implements IAuthController {
             loginPage.printInvalidCredentials();
             authMenu();
         }
+
     }
 
     private User validateUser(String email, String password) {
@@ -123,4 +124,6 @@ public class AuthController implements IAuthController {
         System.out.println(e.getMessage());
         authMenu();
     }
+
+
 }

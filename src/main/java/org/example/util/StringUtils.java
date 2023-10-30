@@ -27,4 +27,5 @@ public class StringUtils {
     public static final String NO_ORDER = "No orders placed so far";
     public static final String STYLE = "<-------------------------->";
     public static final String LOGOUT_MESSAGE = "******Logout successfull*****";
+    public static final String DELIVERY = "your order will be packed soon.......";
 }

@@ -1,4 +1,3 @@
 Your Order are:
-"shirt" x 1 = Rs. 1500.0
 "samsung" x 1 = Rs. 60000.0
-Total - Rs. 61500.0
+Total - Rs. 60000.0

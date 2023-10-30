@@ -1,5 +1,7 @@
 id,title,price,categoryName
 1,"iphone",50000,mobile
-2,"Poco",60000,mobile
-3,"shirt",1500,dress
-4,"T-shirt",1000,dress
+2,"samsung",60000,mobile
+3,"realme",12000,mobile
+4,"shirt",1500,dress
+5,"T-shirt",1000,dress
+6,"cargo",1200,dress
